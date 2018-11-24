@@ -1,17 +1,17 @@
 # flickr-album-restorer
 
-[In 2018, Flickr changed its terms of service](https://www.theverge.com/2018/11/1/18051950/flickr-1000-photo-limit-free-accounts-changes-pro-subscription-smugmug) to limit the number of photos on a free Flickr account to zero.
-Those of us that have/had thousands of photos on Flickr, taking advantage of the previous limit (1TB of data free!) were left with a few of options:
+[In 2018, Flickr changed its terms of service](https://www.theverge.com/2018/11/1/18051950/flickr-1000-photo-limit-free-accounts-changes-pro-subscription-smugmug) to limit the number of photos on a free Flickr account to 1000.
+Those of us that have/had thousands of photos on Flickr, taking advantage of the previous limit (1TB of data free!), were left with a few of options:
 
-1. Do nothing and see the account's storage limit fall to 1000 pictures.
+1. Do nothing and see the account's storage limit fall to 1000 pictures and losea access to some photos.
 2. [Upgrade to a paid Flickr plan](https://www.flickr.com/account/upgrade/pro) and continue using Flickr but with unlimited storage for a small monthly fee.
-3. Download all of your photos and data and find it a new home.
+3. Download all of your photos and data and find them a new home.
 
 This GitHub project contains a quick script to help if you choose option (3).
 
 ## Downloading your Flickr data
 
-Extracting all of your Flickr data is simple. Visit your [Flickr Account page](https://www.flickr.com/account) and click the button on the bottom left. It takes Flickr several *DAYS* to bundle your data into a number of zip files ready to download. Keep checking back on your account page and the links will appear when it's done.
+Extracting all of your Flickr data is simple. Visit your [Flickr Account page](https://www.flickr.com/account) and click the button on the bottom right. It takes Flickr several *DAYS* to bundle your data into a number of zip files ready to download. Keep checking back on your account page and the links will appear when it's done.
 
 Download and extract all of the zipped data.
 
@@ -22,9 +22,9 @@ Move all of the "Account Data" files to a folder called "data" and all of the "P
 
 ## Where are all my albums?
 
-I was disappointed to find that the downloaded pictures were not arranged in the albums as they were on the website. But fear not: a short Node.js script can recreate the albums on your computer but parsing the meta data and moving the pictures into named folders that map to the albums.
+I was disappointed to find that the downloaded pictures were not arranged in the albums as they were on the website. But fear not: a short Node.js script can recreate the albums on your computer by parsing the meta data and moving the pictures into named folders that map to the albums.
 
-In the folder containing the `data` and `pictures` folders, place the `flicker.js` file from this GitHub repository. (You'll need [Node.js](https://nodejs.org/en/download/) installed on your machine too).
+In the folder containing the `data` and `pictures` folders, place the `flickr.js` file from this GitHub repository. (You'll need [Node.js](https://nodejs.org/en/download/) installed on your machine too).
 
 Run the utility:
 
