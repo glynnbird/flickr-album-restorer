@@ -13,6 +13,8 @@ This GitHub project contains a quick script to help if you choose option (3).
 
 Extracting all of your Flickr data is simple. Visit your [Flickr Account page](https://www.flickr.com/account) and click the button on the bottom right. It takes Flickr several *DAYS* to bundle your data into a number of zip files ready to download. Keep checking back on your account page and the links will appear when it's done.
 
+![download](download.png)
+
 Download and extract all of the zipped data.
 
 Move all of the "Account Data" files to a folder called "data" and all of the "Photos and Videos" files to a folder called "pictures".
@@ -33,6 +35,8 @@ $ node flickr.js
 ```
 
 It will create an `albums` folder and create a sub-folder for each album. The original images will be moved into the relevant folders.
+
+![schmeatic](schematic.png)
 
 N.B You might find that some files are left behind in the `pictures` folder. This is because those photos/videos were not attached to any album. Feel free to copy those over to a new "miscellaneous" album.
 
